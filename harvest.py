@@ -10,15 +10,19 @@ class MelonType:
         self, code, first_harvest, color, is_seedless, is_bestseller, name
     ):
         """Initialize a melon."""
-
+        
         self.pairings = []
-
-        # Fill in the rest
+        self.code = code
+        self.first_harvest = first_harvest
+        self.color = color
+        self.is_seedless = is_seedless
+        self.is_bestseller = is_bestseller
+        self.name = name
 
     def add_pairing(self, pairing):
         """Add a food pairing to the instance's pairings list."""
 
-        # Fill in the rest
+        self.pairings.append(pairing)
 
     def update_code(self, new_code):
         """Replace the reporting code with the new_code."""
